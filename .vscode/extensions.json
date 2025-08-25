@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    // Recomendaciones generales
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "vscode-icons-team.vscode-icons",
+    "eamodio.gitlens",
+    "vivaxy.vscode-conventional-commits",
+
+    // Recomendaciones para JS y TS
+    "dbaeumer.vscode-eslint"
+  ],
+  "unwantedRecommendations": []
+}
