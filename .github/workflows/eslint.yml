@@ -1,0 +1,19 @@
+name: ESLint
+
+on:
+  push:
+    branches: ['*']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  phpcs:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇ Git checkout
+        uses: actions/checkout@v4
+      - name: 💾 Install modules
+        run: npm ci
+      - name: 🔍 Lint
+        run: npx eslint --max-warnings 3
